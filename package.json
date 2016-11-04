@@ -1,0 +1,12 @@
+{
+  "name": "bunyan-windows-eventlog",
+  "version": "0.0.1",
+  "description": "Bunyan to Windows Eventlog Stream",
+  "main": "index.js",
+  "author": "Jens Habegger",
+  "license": "MIT",
+  "dependencies": {
+    "util-extend": "^1.0.3",
+    "windows-eventlog": "^2.0.0"
+  }
+}
