@@ -3,21 +3,10 @@
 let util = require('util');
 let extend = require('util-extend');
 let stream = require('stream');
-// let Push = require('pushover-notifications');
 let Stream = stream.Writable || stream.Stream;
 let EventLog = require("../windows-eventlog/build/Release/EventLog.node").EventLog;
+let LEVELS = {30: 'info', 40: 'warn', 50: 'error', 60: 'error'};
 
-// Levels
-let LEVELS = {
-    30: 'info',
-    40: 'warn',
-    50: 'error',
-    60: 'error',
-};
-
-/**
- * Convert level integer to level name string
- */
 function levelName(level) {
     return LEVELS[level];
 }
