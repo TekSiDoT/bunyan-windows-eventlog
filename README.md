@@ -4,11 +4,11 @@
 
 > bunyan to windows eventlog stream
 
-Middleware connect the excellent bunyan logging system to the windows eventlog. It relies on the native Windows API implementation of the node-windows-eventlog package. 
+Middleware connecting the excellent bunyan logging system to the windows eventlog. It relies on the native Windows API implementation of the node-windows-eventlog package. 
 
 ## Installation
 
-> Todo
+    npm install bunyan-windows-eventlog --save 
 
 ## Example
 
