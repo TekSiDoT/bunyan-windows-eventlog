@@ -66,6 +66,16 @@ The windows eventlog only knows three basic loglevels: *info*, *warning* and *er
 
 This mapping is planned become configurable in one of the next releases.
 
+## Changelog:
+
+### [1.0.3]
+
+* Removes Win32 restrictions to enable compilation on Linux and its derivatives
+
+### [1.0.2]
+
+* Cosmetic Changes
+
 ## Todo:
 
 * Enable custom loglevel mapping
@@ -75,3 +85,4 @@ This mapping is planned become configurable in one of the next releases.
 ## License
 
 MIT License. (c) 2016 [Jens Habegger](jfc.habegger@gmail.com).
+

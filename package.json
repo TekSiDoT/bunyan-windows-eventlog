@@ -8,9 +8,6 @@
     "util-extend": "^1.0.3",
     "windows-eventlog": "^2.0.0"
   },
-  "os": [
-    "win32"
-  ],
   "keywords": [
     "windows",
     "services",
