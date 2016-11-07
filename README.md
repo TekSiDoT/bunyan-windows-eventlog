@@ -10,6 +10,22 @@ Middleware connecting the excellent bunyan logging system to the windows eventlo
 
     npm install bunyan-windows-eventlog --save 
 
+### Note concerning the compilation of the native module windows-eventlog:
+
+Please check out the [readme of the windows-eventlog module](https://github.com/jfromaniello/node-windows-eventlog) for information regarding its compilation. 
+
+Additionally, make sure you have the latest npm version installed and you are compiling the native module with the same version of node you intend to use your application with.
+
+### Note concerning Webpack:
+
+When using Webpack you will have to additionally install the [node-loader package](https://www.npmjs.com/package/node-loader) and make sure that the module property in your webpack.config.js contains the following entry:
+
+    module: {
+        loaders: [
+            { test: /\.node$/, loader: "node-loader" }
+        ]
+    },
+
 ## Example
 
 > Todo
@@ -19,7 +35,6 @@ Middleware connecting the excellent bunyan logging system to the windows eventlo
 * Write Installation / Examples documentation
 * Enable custom log level mapping
 * Enable custom status id setting (windows-eventlog update necessary)
-* Make sure native module installation is working fine
 * Tests?
 
 ## License
