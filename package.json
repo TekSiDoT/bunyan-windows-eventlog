@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "util-extend": "^1.0.3",
-    "windows-eventlog": "^2.0.0"
+    "windows-eventlog": "git://sccs01.vibro.muellerbbm-vas.de/tools/node/node-windows-eventlog.git"
   },
   "keywords": [
     "windows",
