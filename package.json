@@ -1,6 +1,6 @@
 {
   "name": "bunyan-windows-eventlog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Bunyan to Windows Eventlog Stream",
   "main": "index.js",
   "license": "MIT",
@@ -11,7 +11,7 @@
   "os": [
     "win32"
   ],
-    "keywords": [
+  "keywords": [
     "windows",
     "services",
     "log",
@@ -23,7 +23,7 @@
     "name": "Jens Habegger",
     "email": "jfc.habegger@gmail.com"
   },
-  	"repository": {
+  "repository": {
     "type": "git",
     "url": "git://github.com/TekSiDoT/bunyan-windows-eventlog.git"
   }
