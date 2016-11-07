@@ -16,6 +16,8 @@ Please check out the [readme of the windows-eventlog module](https://github.com/
 
 Additionally, make sure you have the latest npm version installed and you are compiling the native module with the same version of node you intend to use your application with.
 
+I am currently investigating the possibility to compile the native module from a Docker based linux container.
+
 ### Note concerning Webpack:
 
 When using Webpack you will have to additionally install the [node-loader package](https://www.npmjs.com/package/node-loader) and make sure that the module property in your webpack.config.js contains the following entry:
