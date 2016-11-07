@@ -28,14 +28,49 @@ When using Webpack you will have to additionally install the [node-loader packag
 
 ## Example
 
-> Todo
+Require the library:
+
+    var WindowsEventLog = require('bunyan-windows-eventlog');
+
+Instantiate your bunyan logger:
+
+    var appName = 'MyApp';
+    var log = bunyan.createLogger({
+        name: appName,
+        streams: {
+            level: 'info',
+            type: 'raw',
+            stream: new WindowsEventLog({ 
+                appName: appName 
+                })
+            }
+        level: 'info'
+        });
+
+Create a log entry:
+
+    log.info({
+        foo: 'bar'
+    }, 'hello world');
+
+### loglevel-mapping
+
+The windows eventlog only knows three basic loglevels: *info*, *warning* and *error*. The bunyan loglevels currently have the following hardwired mapping:
+    
+* 10 trace -> ignored
+* 20 debug -> ignored
+* 30 info -> info
+* 40 warning -> warning
+* 50 error -> error 
+* 60 fatal -> error
+
+This mapping is planned become configurable in one of the next releases.
 
 ## Todo:
 
-* Write Installation / Examples documentation
-* Enable custom log level mapping
+* Enable custom loglevel mapping
 * Enable custom status id setting (windows-eventlog update necessary)
-* Tests?
+* Tests
 
 ## License
 
