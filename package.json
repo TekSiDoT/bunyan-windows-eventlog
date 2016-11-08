@@ -1,6 +1,6 @@
 {
   "name": "bunyan-windows-eventlog",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bunyan to Windows Eventlog Stream",
   "main": "index.js",
   "license": "MIT",
