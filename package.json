@@ -14,7 +14,7 @@
     "log",
     "logging",
     "logger",
-    "winston"
+    "bunyan"
   ],
   "author": {
     "name": "Jens Habegger",
