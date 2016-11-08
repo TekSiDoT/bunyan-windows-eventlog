@@ -70,6 +70,10 @@ This mapping is planned become configurable in one of the next releases.
 
 ## Changelog:
 
+### [1.0.4] 
+
+* Cosmetics
+
 ### [1.0.3]
 
 * Removes Win32 restrictions to enable compilation on Linux and its derivatives
